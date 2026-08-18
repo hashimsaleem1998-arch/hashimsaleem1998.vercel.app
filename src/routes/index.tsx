@@ -161,7 +161,7 @@ function Index() {
             </a>
             <a
               href={resumeAsset.url}
-              download="Hashim-Saleem-Resume.pdf"
+              download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
               Download Resume
@@ -315,7 +315,7 @@ function Index() {
             </a>
             <a
               href={resumeAsset.url}
-              download="Hashim-Saleem-Resume.pdf"
+              download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
               Download Resume
