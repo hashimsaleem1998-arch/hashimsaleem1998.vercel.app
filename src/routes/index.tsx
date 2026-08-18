@@ -260,7 +260,7 @@ function Index() {
             <p className="mt-2 text-sm text-muted-foreground">
               Capital University of Science &amp; Technology
             </p>
-            <p className="mt-1 text-xs text-accent-foreground">02/2016 — 07/2022</p>
+            <p className="mt-1 text-xs text-accent-foreground">February 2016 — July 2022</p>
           </div>
           <div className="surface-card p-7">
             <p className="eyebrow">Skills</p>
@@ -301,11 +301,11 @@ function Index() {
             </a>
             <a
               className="hover:text-foreground"
-              href="https://behance.net/hashimsaleem"
+              href="https://hashimsaleem1998.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
-              behance.net/hashimsaleem
+              hashimsaleem1998.vercel.app
             </a>
             <span>Islamabad, Pakistan</span>
           </div>
