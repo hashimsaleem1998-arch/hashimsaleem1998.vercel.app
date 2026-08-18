@@ -55,7 +55,7 @@ const work = [
       "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
   },
   {
-    title: "Customer 360° Profile",
+    title: "Customer Profile & Details",
     client: "ChowPOS RMS · Web",
     image: workCustomer,
     description:
@@ -81,31 +81,32 @@ const experience = [
   {
     role: "Product UX/UI Designer",
     company: "Roomy Pvt Ltd.",
-    period: "06/2025 — Present",
+    period: "June 2025 — Present",
     body: "UX/Product Designer across Roomy's digital product ecosystem — RMS, PMS, Online Ordering, QR Payments, Loyalty and web/mobile apps. Translate complex business and user requirements into intuitive, scalable, user-centered product experiences, collaborating across multiple products to solve operational and customer-facing challenges.",
+  
   },
   {
     role: "UI/UX Designer",
     company: "MaxRemind Inc",
-    period: "09/2024 — 06/2025",
+    period: "September 2024 — June 2025",
     body: "Delivered websites, landing pages, digital campaigns, banners and social content across client projects. Key accomplishment: the end-to-end web design for Union Health Solutions, a US-based allergy & immunotherapy provider, aligned with their brand and services.",
   },
   {
     role: "UI/UX Designer",
     company: "AffordIT Ltd. (remote)",
-    period: "2023 — 2024",
+    period: "October 2023 — July 2024",
     body: "Rejoined as a remote designer after Lala Group, contributing to a diverse range of client projects: social creatives, responsive websites, landing pages and mobile applications with visually consistent, user-focused experiences.",
   },
   {
     role: "UI/UX Designer",
     company: "Lala Group of Companies",
-    period: "03/2023 — 08/2023",
+    period: "March 2023 — August 2023",
     body: "Worked across the group's four main domains and designed an Umrah-based website, covering web experiences end to end during a five-month tenure.",
   },
   {
     role: "UI/UX Designer",
     company: "Afford-IT Ltd.",
-    period: "12/2022 — 06/2023",
+    period: "December 2022 — June 2023",
     body: "Designed social media posts, web experiences and mobile apps for multiple clients as part of the in-house design team.",
   },
 ];
