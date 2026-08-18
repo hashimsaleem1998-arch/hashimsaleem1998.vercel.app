@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import workLoyalty from "@/assets/work-loyalty.jpg";
 import workQr from "@/assets/work-qr.jpg";
-import workOrdering from "@/assets/work-ordering.jpg";
+import workOrdering from "@/assets/work-ordering.png";
 import workCustomer from "@/assets/work-customer360.jpg";
 import workRoomy from "@/assets/work-roomy.jpg";
 import workRewards from "@/assets/work-rewards.jpg";
