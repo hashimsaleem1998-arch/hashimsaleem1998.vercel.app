@@ -157,13 +157,15 @@ function Index() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a href={`tel:${PHONE}`} className="btn-base btn-primary hover:btn-primary-hover">
-              Call Now
+              <img src="/phone-icon.svg" alt="Phone" className="w-4 h-4" />
+  +92309-5307264
             </a>
             <a
               href={resumeAsset.url}
               download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
+              <img src="/download-icon.svg" alt="Download" className="w-4 h-4 invert-0 dark:invert" />
               Download Resume
             </a>
           </div>
@@ -311,6 +313,7 @@ function Index() {
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href={`tel:${PHONE}`} className="btn-base btn-primary hover:btn-primary-hover">
+              <img src="/phone-icon.svg" alt="Phone" className="w-4 h-4" />
               Call Now
             </a>
             <a
@@ -318,6 +321,7 @@ function Index() {
               download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
+              <img src="/download-icon.svg" alt="Download" className="w-4 h-4 invert-0 dark:invert" />
               Download Resume
             </a>
           </div>
