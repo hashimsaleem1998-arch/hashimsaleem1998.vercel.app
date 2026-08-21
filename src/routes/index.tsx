@@ -148,7 +148,7 @@ function Index() {
       {/* Hero */}
       <section className="hero-glow relative overflow-hidden border-b border-border">
         <div className="mx-auto max-w-5xl px-6 py-28 text-center sm:py-36">
-          <p className="eyebrow">Islamabad, Pakistan · 3+ years</p>
+          <p className="eyebrow">Islamabad, Pakistan · 4 years</p>
           <h1 className="mt-6 text-5xl leading-[0.95] font-bold sm:text-7xl lg:text-8xl">
             Hashim <span className="text-gradient-warm">Saleem</span>
           </h1>
@@ -185,7 +185,7 @@ function Index() {
         <SectionHeading eyebrow="Summary" title="Designing products that move numbers" />
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
           <p>
-            UX/Product Designer with 3+ years of experience designing and optimizing digital
+            UX/Product Designer with 4 years of experience designing and optimizing digital
             products across Restaurant Management, Property Management, Online Ordering, Payments,
             Loyalty and mobile applications — turning complex business and user requirements into
             intuitive, scalable, data-driven experiences on web and mobile.
