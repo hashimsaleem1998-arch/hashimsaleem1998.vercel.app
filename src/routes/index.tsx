@@ -24,14 +24,14 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "+923095307264";
 
-interface WorkItem {
+/*interface WorkItem {
   title: string;
   client: string;
   images: string[];
   description: string;
-}
+}*/
 
-const work: WorkItem[] = [
+const work = [
   {
     title: "Points & Gifts Loyalty Program",
     client: "Boomingo · Web & Mobile",
