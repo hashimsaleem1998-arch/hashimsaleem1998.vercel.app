@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import workLoyalty from "@/assets/work-loyalty.jpg";
 import workQr from "@/assets/work-qr.jpg";
@@ -7,73 +6,67 @@ import workOrdering from "@/assets/work-ordering.png";
 import workCustomer from "@/assets/work-customer360.jpg";
 import workRoomy from "@/assets/work-roomy.jpg";
 import workRewards from "@/assets/work-rewards.jpg";
+import React, { useState } from 'react';
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hashim Saleem — UX/UI Product Designer Portfolio" },
-      {
-        name: "description",
-        content:
-          "Portfolio of Hashim Saleem, UX/UI Product Designer in Islamabad with 3+ years designing restaurant, property, payments and loyalty products.",
-      },
-      { property: "og:title", content: "Hashim Saleem — UX/UI Product Designer" },
-      {
-        property: "og:description",
-        content:
-          "End-to-end product design across RMS, PMS, online ordering, QR payments and loyalty platforms.",
-      },
+      { title: "Hashim Saleem - UX/UI Product Designer Portfolio" },
+      { name: "description", content: "Portfolio of Hashim Saleem, UX/UI Product Designer in Islamabad with 5+ years designing restaurant, property, payments and loyalty products." },
+      { property: "og:title", content: "Hashim Saleem - UX/UI Product Designer" },
+      { property: "og:description", content: "End-to-end product design across RMS, PMS, online ordering, QR payments and loyalty platforms." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Index,
+  component: Index, // ✨ Fixed: Component ab head ke bahar sahi jagah par hai
 });
 
 const PHONE = "+923095307264";
 
-const work = [
+interface WorkItem {
+  title: string;
+  client: string;
+  images: string[];
+  description: string;
+}
+
+const work: WorkItem[] = [
   {
     title: "Points & Gifts Loyalty Program",
     client: "Boomingo · Web & Mobile",
-    image: workLoyalty,
-    description:
-      "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
+    images: [workLoyalty, workQr, workOrdering], 
+    description: "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
   },
   {
     title: "QR Payment & Digital Ordering",
     client: "Roomy · Mobile Web",
-    image: workQr,
-    description:
-      "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
+    images: [workQr, workOrdering, workCustomer],
+    description: "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
   },
   {
     title: "Online Ordering System",
     client: "Roomy · Web Platform",
-    image: workOrdering,
-    description:
-      "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
+    images: [workOrdering, workCustomer, workRoomy],
+    description: "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
   },
   {
     title: "Customer Profile & Details",
     client: "ChowPOS RMS · Web",
-    image: workCustomer,
-    description:
-      "A centralized customer view combining profile data, visit frequency, spending insights, ordering behavior, notes, feedback and full order history. Structured and data-driven, optimized for quick scanning by restaurant staff.",
+    images: [workCustomer, workRoomy, workRewards],
+    description: "A centralized customer view combining profile data, visit frequency, spending insights, ordering behavior, notes, feedback and full order history. Structured and data-driven, optimized for quick scanning by restaurant staff.",
   },
   {
     title: "Roomy Mobile App Revamp",
     client: "Roomy · iOS & Android",
-    image: workRoomy,
-    description:
-      "Redesigned the end-to-end room booking experience with intuitive flows and a user-focused interface, and am currently designing the loyalty rewards experience to drive engagement and repeat bookings.",
+    images: [workRoomy, workRewards, workLoyalty],
+    description: "Redesigned the end-to-end room booking experience with intuitive flows and a user-focused interface, and am currently designing the loyalty rewards experience to drive engagement and repeat bookings.",
   },
   {
     title: "Loyalty Rewards Experience",
     client: "ChowPOS RMS · Web & Mobile",
-    image: workRewards,
-    description:
-      "A customer-centric rewards journey that encourages repeat purchases and redemption, with the potential to drive 30–40% growth in repeat orders and restaurant sales through stronger retention.",
+    images: [workRewards, workLoyalty, workQr],
+    description: "A customer-centric rewards journey that encourages repeat purchases and redemption, with the potential to drive 30–40% growth in repeat orders and restaurant sales through stronger retention.",
   },
 ];
 
@@ -81,34 +74,33 @@ const experience = [
   {
     role: "Product UX/UI Designer",
     company: "Roomy Pvt Ltd.",
-    period: "June 2025 — Present",
-    body: "UX/Product Designer across Roomy's digital product ecosystem — RMS, PMS, Online Ordering, QR Payments, Loyalty and web/mobile apps. Translate complex business and user requirements into intuitive, scalable, user-centered product experiences, collaborating across multiple products to solve operational and customer-facing challenges.",
-  
+    period: "June 2025 - Present",
+    //body: "UX/UI Product Designer across Roomy's digital product ecosystem - RMS, PMS, Online Ordering, QR Payments, Loyalty and web/mobile apps. Translate complex business and user requirements into intuitive, scalable, user-centered product experiences, collaborating across multiple products to solve operational and customer-facing challenges.",
   },
   {
     role: "UI/UX Designer",
-    company: "MaxRemind Inc",
-    period: "September 2024 — June 2025",
+    company: "MasterMind Inc",
+    period: "September 2024 - June 2025",
     body: "Delivered websites, landing pages, digital campaigns, banners and social content across client projects. Key accomplishment: the end-to-end web design for Union Health Solutions, a US-based allergy & immunotherapy provider, aligned with their brand and services.",
   },
   {
     role: "UI/UX Designer",
-    company: "AffordIT Ltd. (remote)",
-    period: "October 2023 — July 2024",
-    body: "Rejoined as a remote designer after Lala Group, contributing to a diverse range of client projects: social creatives, responsive websites, landing pages and mobile applications with visually consistent, user-focused experiences.",
+    company: "AffordIT Ltd. (Remote)",
+    period: "October 2023 - July 2024",
+    body: "Rejoined as a remote designer after Lals Group, contributing to a diverse range of client projects: social creatives, responsive websites, landing pages and mobile applications with visually consistent, user-focused experiences.",
   },
   {
     role: "UI/UX Designer",
-    company: "Lala Group of Companies",
-    period: "March 2023 — August 2023",
-    body: "Worked across the group's four main domains and designed an Umrah-based website, covering web experiences end to end during a five-month tenure.",
+    company: "Lals Group (E-Commerce)",
+    period: "March 2023 - August 2023",
+    body: "Worked across the group's four main domains and designed an Oman-based website, covering web experiences end to end during a five-month tenure.",
   },
   {
     role: "UI/UX Designer",
-    company: "Afford-IT Ltd.",
-    period: "December 2022 — June 2023",
+    company: "AffordIT Ltd.",
+    period: "December 2022 - June 2023",
     body: "Designed social media posts, web experiences and mobile apps for multiple clients as part of the in-house design team.",
-  },
+  }
 ];
 
 const skills = [
@@ -132,6 +124,82 @@ const metrics = [
   { value: "70%", label: "Less operational effort" },
   { value: "80%", label: "Faster dining experience" },
 ];
+
+function ProjectImageCarousel({ images }: { images: string[] }) {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  if (!images || images.length === 0) return null;
+
+  const previousImage = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', borderRadius: '8px' }}>
+      <img 
+        src={images[currentIndex]} 
+        alt="Project Preview" 
+        style={{ 
+          width: '100%', 
+          height: 'auto', 
+          aspectRatio: '1.42 / 1', 
+          objectFit: 'cover',
+          display: 'block' 
+        }} 
+      />
+
+      {images.length > 1 && (
+        <button 
+          onClick={previousImage}
+          style={{
+            position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)',
+            background: 'rgba(18, 17, 16, 0.85)', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', 
+            borderRadius: '50%', width: '36px', height: '36px', cursor: 'pointer',
+            fontSize: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)', zIndex: 10
+          }}
+        >
+          ‹
+        </button>
+      )}
+
+      {images.length > 1 && (
+        <button 
+          onClick={nextImage}
+          style={{
+            position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)',
+            background: 'rgba(18, 17, 16, 0.85)', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', 
+            borderRadius: '50%', width: '36px', height: '36px', cursor: 'pointer',
+            fontSize: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)', zIndex: 10
+          }}
+        >
+          ›
+        </button>
+      )}
+      
+      {images.length > 1 && (
+        <div style={{
+          position: 'absolute', bottom: '12px', left: '50%', transform: 'translateX(-50%)',
+          display: 'flex', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '4px 8px', borderRadius: '10px'
+        }}>
+          {images.map((_, idx) => (
+            <div key={idx} style={{
+              width: '6px', height: '6px', borderRadius: '50%',
+              background: idx === currentIndex ? '#b5865a' : 'rgba(255,255,255,0.5)'
+            }} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
@@ -211,7 +279,7 @@ function Index() {
             {work.map((project) => (
               <article key={project.title} className="surface-card overflow-hidden">
                 <img
-                  src={project.image}
+                  src={project.images[0]}
                   alt={`${project.title} interface design`}
                   loading="lazy"
                   width={1200}
