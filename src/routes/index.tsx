@@ -125,81 +125,186 @@ const metrics = [
   { value: "80%", label: "Faster dining experience" },
 ];
 
+
 function ProjectImageCarousel({ images }: { images: string[] }) {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   if (!images || images.length === 0) return null;
 
   const previousImage = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
   };
 
   const nextImage = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', borderRadius: '8px' }}>
-      <img 
-        src={images[currentIndex]} 
-        alt="Project Preview" 
-        style={{ 
-          width: '100%', 
-          height: 'auto', 
-          aspectRatio: '1.42 / 1', 
-          objectFit: 'cover',
-          display: 'block' 
-        }} 
-      />
-
-      {images.length > 1 && (
-        <button 
-          onClick={previousImage}
+    <>
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          overflow: "hidden",
+          borderRadius: "8px",
+          cursor: "zoom-in",
+        }}
+      >
+        <img
+          src={images[currentIndex]}
+          alt="Project preview"
+          onClick={() => setIsFullscreen(true)}
           style={{
-            position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)',
-            background: 'rgba(18, 17, 16, 0.85)', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', 
-            borderRadius: '50%', width: '36px', height: '36px', cursor: 'pointer',
-            fontSize: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.3)', zIndex: 10
+            width: "100%",
+            aspectRatio: "4 / 3",
+            objectFit: "cover",
+            display: "block",
+          }}
+        />
+
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={previousImage}
+              aria-label="Previous image"
+              style={arrowStyle("left")}
+            >
+              ‹
+            </button>
+            <button
+              onClick={nextImage}
+              aria-label="Next image"
+              style={arrowStyle("right")}
+            >
+              ›
+            </button>
+          </>
+        )}
+      </div>
+
+      {isFullscreen && (
+        <div
+          onClick={() => setIsFullscreen(false)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setIsFullscreen(false);
+            if (e.key === "ArrowLeft") {
+              setCurrentIndex((prev) =>
+                prev === 0 ? images.length - 1 : prev - 1
+              );
+            }
+            if (e.key === "ArrowRight") {
+              setCurrentIndex((prev) =>
+                prev === images.length - 1 ? 0 : prev + 1
+              );
+            }
+          }}
+          tabIndex={0}
+          ref={(el) => el?.focus()}
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 9999,
+            background: "rgba(0,0,0,0.95)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "60px 70px",
           }}
         >
-          ‹
-        </button>
-      )}
+          <button
+            onClick={() => setIsFullscreen(false)}
+            aria-label="Close fullscreen"
+            style={{
+              position: "absolute",
+              top: 20,
+              right: 25,
+              color: "white",
+              background: "#292929",
+              border: "none",
+              borderRadius: "50%",
+              width: 44,
+              height: 44,
+              fontSize: 28,
+              cursor: "pointer",
+            }}
+          >
+            ×
+          </button>
 
-      {images.length > 1 && (
-        <button 
-          onClick={nextImage}
-          style={{
-            position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)',
-            background: 'rgba(18, 17, 16, 0.85)', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', 
-            borderRadius: '50%', width: '36px', height: '36px', cursor: 'pointer',
-            fontSize: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.3)', zIndex: 10
-          }}
-        >
-          ›
-        </button>
-      )}
-      
-      {images.length > 1 && (
-        <div style={{
-          position: 'absolute', bottom: '12px', left: '50%', transform: 'translateX(-50%)',
-          display: 'flex', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '4px 8px', borderRadius: '10px'
-        }}>
-          {images.map((_, idx) => (
-            <div key={idx} style={{
-              width: '6px', height: '6px', borderRadius: '50%',
-              background: idx === currentIndex ? '#b5865a' : 'rgba(255,255,255,0.5)'
-            }} />
-          ))}
+          <img
+            src={images[currentIndex]}
+            alt="Full-screen project preview"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              maxWidth: "100%",
+              maxHeight: "100%",
+              objectFit: "contain",
+            }}
+          />
+
+          {images.length > 1 && (
+            <>
+              <button
+                onClick={previousImage}
+                aria-label="Previous image"
+                style={arrowStyle("left")}
+              >
+                ‹
+              </button>
+              <button
+                onClick={nextImage}
+                aria-label="Next image"
+                style={arrowStyle("right")}
+              >
+                ›
+              </button>
+            </>
+          )}
+
+          <div
+            style={{
+              position: "absolute",
+              bottom: 20,
+              color: "white",
+              fontSize: 14,
+            }}
+          >
+            {currentIndex + 1} / {images.length}
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
+
+function arrowStyle(side: "left" | "right"): React.CSSProperties {
+  return {
+    position: "absolute",
+    [side]: "12px",
+    top: "50%",
+    transform: "translateY(-50%)",
+    background: "rgba(18,17,16,0.85)",
+    color: "#fff",
+    border: "1px solid rgba(255,255,255,0.2)",
+    borderRadius: "50%",
+    width: "40px",
+    height: "40px",
+    cursor: "pointer",
+    fontSize: "28px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 10,
+  };
+}
+
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
@@ -278,14 +383,7 @@ function Index() {
           <div className="grid gap-8 sm:grid-cols-2">
             {work.map((project) => (
               <article key={project.title} className="surface-card overflow-hidden">
-                <img
-                  src={project.images[0]}
-                  alt={`${project.title} interface design`}
-                  loading="lazy"
-                  width={1200}
-                  height={900}
-                  className="aspect-[4/3] w-full object-cover"
-                />
+                <ProjectImageCarousel images={project.images} />
                 <div className="p-6">
                   <p className="eyebrow">{project.client}</p>
                   <h3 className="mt-3 text-xl font-semibold">{project.title}</h3>
