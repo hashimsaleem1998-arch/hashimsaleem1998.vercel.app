@@ -37,20 +37,20 @@ const PHONE = "+923095307264";
 
 const work = [
   {
-    title: "Points & Gifts Loyalty Program",
-    client: "Boomingo · Web & Mobile",
+    title: "Gifts & Points Loyalty Program",
+    client: "Boomingo Loyalty Platform · Web & Mobile",
     images: [workLoyalty, workQr, workOrdering], 
     description: "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
   },
   {
     title: "QR Payment & Digital Ordering",
-    client: "Roomy · Mobile Web",
+    client: "Payment Solutions · Mobile Web",
     images: [workQr, workOrdering, workCustomer],
     description: "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
   },
   {
     title: "Online Ordering System",
-    client: "Roomy · Web Platform",
+    client: "Restaurants · Web Platform",
     images: [workOrdering, workCustomer, workRoomy],
     description: "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
   },
@@ -79,11 +79,11 @@ const experience = [
     role: "Product UX/UI Designer",
     company: "Roomy Pvt Ltd.",
     period: "June 2025 - Present",
-    //body: "UX/UI Product Designer across Roomy's digital product ecosystem - RMS, PMS, Online Ordering, QR Payments, Loyalty and web/mobile apps. Translate complex business and user requirements into intuitive, scalable, user-centered product experiences, collaborating across multiple products to solve operational and customer-facing challenges.",
+    body: "UX/UI Product Designer across Roomy's digital product ecosystem - RMS, PMS, Online Ordering, QR Payments, Loyalty and web/mobile apps. Translate complex business and user requirements into intuitive, scalable, user-centered product experiences, collaborating across multiple products to solve operational and customer-facing challenges.",
   },
   {
     role: "UI/UX Designer",
-    company: "MasterMind Inc",
+    company: "MaxRemind Inc",
     period: "September 2024 - June 2025",
     body: "Delivered websites, landing pages, digital campaigns, banners and social content across client projects. Key accomplishment: the end-to-end web design for Union Health Solutions, a US-based allergy & immunotherapy provider, aligned with their brand and services.",
   },
@@ -91,17 +91,17 @@ const experience = [
     role: "UI/UX Designer",
     company: "AffordIT Ltd. (Remote)",
     period: "October 2023 - July 2024",
-    body: "Rejoined as a remote designer after Lals Group, contributing to a diverse range of client projects: social creatives, responsive websites, landing pages and mobile applications with visually consistent, user-focused experiences.",
+    body: "Rejoined as a remote designer after Lala Group, contributing to a diverse range of client projects: social creatives, responsive websites, landing pages and mobile applications with visually consistent, user-focused experiences.",
   },
   {
     role: "UI/UX Designer",
-    company: "Lals Group (E-Commerce)",
+    company: "Lala Group of Travels & Tours",
     period: "March 2023 - August 2023",
     body: "Worked across the group's four main domains and designed an Oman-based website, covering web experiences end to end during a five-month tenure.",
   },
   {
     role: "UI/UX Designer",
-    company: "AffordIT Ltd.",
+    company: "AffordIT Ltd. (Remote)",
     period: "December 2022 - June 2023",
     body: "Designed social media posts, web experiences and mobile apps for multiple clients as part of the in-house design team.",
   }
