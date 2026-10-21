@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import workLoyalty from "@/assets/work-loyalty.jpg";
+import workLoyalty1 from "@/assets/work-loyalty1.jpg";
 import workQr from "@/assets/work-qr.jpg";
 import workOrdering from "@/assets/work-ordering.png";
 import workCustomer from "@/assets/work-customer360.jpg";
@@ -39,7 +40,7 @@ const work = [
   {
     title: "Gifts & Points Loyalty Program",
     client: "Boomingo Loyalty Platform · Web & Mobile",
-    images: [workLoyalty, workQr, workOrdering], 
+    images: [workLoyalty, workLoyalty1,], 
     description: "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
   },
   {
