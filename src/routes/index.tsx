@@ -11,10 +11,12 @@ import workLoyalty6 from "@/assets/work-loyalty6.jpg";
 import workQr from "@/assets/work-qr.jpg";
 import workOrdering from "@/assets/work-ordering.png";
 import workCustomer from "@/assets/work-customer360.jpg";
+
 import workRoomy from "@/assets/work-roomy.jpg";
 import workRoomy1 from "@/assets/work-roomy1.jpg";
 import workRoomy2 from "@/assets/work-roomy2.jpg";
 import workRoomy3 from "@/assets/work-roomy3.jpg";
+import workRoomy4 from "@/assets/work-roomy4.jpg";
 
 import workRewards from "@/assets/work-rewards.jpg";
 import React, { useState } from 'react';
@@ -70,7 +72,7 @@ const work = [
   {
     title: "Roomy Mobile App Revamp",
     client: "Roomy · iOS & Android",
-    images: [workRoomy, workRoomy1, workRoomy2, workRoomy3],
+    images: [workRoomy, workRoomy1, workRoomy2, workRoomy3, workRoomy4],
     description: "Redesigned the end-to-end room booking experience with intuitive flows and a user-focused interface, and am currently designing the loyalty rewards experience to drive engagement and repeat bookings.",
   },
   {
