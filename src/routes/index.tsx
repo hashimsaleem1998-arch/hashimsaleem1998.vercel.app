@@ -9,6 +9,11 @@ import workLoyalty5 from "@/assets/work-loyalty5.jpg";
 import workLoyalty6 from "@/assets/work-loyalty6.jpg";
 
 import workQr from "@/assets/work-qr.jpg";
+import workQr1 from "@/assets/work-qr1.jpg";
+import workQr2 from "@/assets/work-qr2.jpg";
+import workQr3 from "@/assets/work-qr3.jpg";
+import workQr4 from "@/assets/work-qr4.jpg";
+
 import workOrdering from "@/assets/work-ordering.png";
 import workCustomer from "@/assets/work-customer360.jpg";
 
@@ -54,7 +59,7 @@ const work = [
   {
     title: "QR Payment & Digital Ordering",
     client: "Payment Solutions · Mobile Web",
-    images: [workQr, workOrdering, workCustomer],
+    images: [workQr, workQr1, workQr2, workQr3, workQr4],
     description: "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
   },
   {
