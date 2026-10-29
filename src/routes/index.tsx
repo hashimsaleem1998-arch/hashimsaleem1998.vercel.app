@@ -15,6 +15,27 @@ import workQr3 from "@/assets/work-qr3.jpg";
 import workQr4 from "@/assets/work-qr4.jpg";
 
 import workOrdering from "@/assets/work-ordering.png";
+import workOrdering1 from "@/assets/work-ordering1.png";
+import workOrderingMod from "@/assets/work-orderingModifier.png";
+import workOrdering2 from "@/assets/work-ordering2.png";
+import workOrdering3 from "@/assets/work-ordering3.png";
+import workOrderingAccount from "@/assets/work-orderingCreateAccount.png";
+import workOrderingOTP from "@/assets/work-orderingOTPVerify.png";
+import workOrdering4 from "@/assets/work-ordering4.png";
+import workOrdering5 from "@/assets/work-ordering5.png";
+import workOrdering6 from "@/assets/work-ordering6.png";
+import workOrdering7 from "@/assets/work-ordering7.png";
+import workOrdering8 from "@/assets/work-ordering8.png";
+import workOrdering9 from "@/assets/work-ordering9.png";
+import workOrdering10 from "@/assets/work-ordering10.png";
+import workOrdering11 from "@/assets/work-ordering11.png";
+import workOrdering12 from "@/assets/work-ordering12.png";
+import workOrdering13 from "@/assets/work-ordering13.png";
+import workOrdering14 from "@/assets/work-ordering14.png";
+import workOrdering15 from "@/assets/work-ordering15.png";
+import workOrdering16 from "@/assets/work-ordering16.png";
+import workOrdering17 from "@/assets/work-ordering17.png";
+
 import workCustomer from "@/assets/work-customer360.jpg";
 
 import workRoomy from "@/assets/work-roomy.jpg";
@@ -24,15 +45,23 @@ import workRoomy3 from "@/assets/work-roomy3.jpg";
 import workRoomy4 from "@/assets/work-roomy4.jpg";
 
 import workRewards from "@/assets/work-rewards.jpg";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Hashim Saleem - UX/UI Product Designer Portfolio" },
-      { name: "description", content: "Portfolio of Hashim Saleem, UX/UI Product Designer in Islamabad with 5+ years designing restaurant, property, payments and loyalty products." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Hashim Saleem, UX/UI Product Designer in Islamabad with 5+ years designing restaurant, property, payments and loyalty products.",
+      },
       { property: "og:title", content: "Hashim Saleem - UX/UI Product Designer" },
-      { property: "og:description", content: "End-to-end product design across RMS, PMS, online ordering, QR payments and loyalty platforms." },
+      {
+        property: "og:description",
+        content:
+          "End-to-end product design across RMS, PMS, online ordering, QR payments and loyalty platforms.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -53,38 +82,75 @@ const work = [
   {
     title: "Gifts & Points Loyalty Program",
     client: "Boomingo Loyalty Platform · Web & Mobile",
-    images: [workLoyalty, workLoyalty1, workLoyalty2, workLoyalty3, workLoyalty4, workLoyalty5, workLoyalty6], 
-    description: "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
+    images: [
+      workLoyalty,
+      workLoyalty1,
+      workLoyalty2,
+      workLoyalty3,
+      workLoyalty4,
+      workLoyalty5,
+      workLoyalty6,
+    ],
+    description:
+      "Designed and optimized the points and gifts programs across Boomingo's web and mobile loyalty platform. The reworked earning and redemption journey lifted user engagement by 20% and improved rewards efficiency by 30%.",
   },
   {
     title: "QR Payment & Digital Ordering",
     client: "Payment Solutions · Mobile Web",
     images: [workQr, workQr1, workQr2, workQr3, workQr4],
-    description: "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
+    description:
+      "Unified payments and menu ordering into one experience so guests can order from their table, split bills, pay for individual items or a custom amount from their phone. Result: an 80% faster, more seamless dining experience.",
   },
   {
     title: "Online Ordering System",
     client: "Restaurants · Web Platform",
-    images: [workOrdering, workCustomer, workRoomy],
-    description: "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
+    images: [
+      workOrdering,
+      workOrdering1,
+      workOrderingMod,
+      workOrdering2,
+      workOrdering3,
+      workOrderingAccount,
+      workOrderingOTP,
+      workOrdering4,
+      workOrdering5,
+      workOrdering6,
+      workOrdering7,
+      workOrdering8,
+      workOrdering9,
+      workOrdering10,
+      workOrdering11,
+      workOrdering12,
+      workOrdering13,
+      workOrdering14,
+      workOrdering15,
+      workOrdering16,
+      workOrdering17
+
+    ],
+    description:
+      "An end-to-end online ordering and order-monitoring system for restaurants. Streamlined workflows cut operational effort by 70% and improved order monitoring efficiency by 30% with far better system visibility.",
   },
   {
     title: "Customer Profile & Details",
     client: "ChowPOS RMS · Web",
     images: [workCustomer, workRoomy, workRewards],
-    description: "A centralized customer view combining profile data, visit frequency, spending insights, ordering behavior, notes, feedback and full order history. Structured and data-driven, optimized for quick scanning by restaurant staff.",
+    description:
+      "A centralized customer view combining profile data, visit frequency, spending insights, ordering behavior, notes, feedback and full order history. Structured and data-driven, optimized for quick scanning by restaurant staff.",
   },
   {
     title: "Roomy Mobile App Revamp",
     client: "Roomy · iOS & Android",
     images: [workRoomy, workRoomy1, workRoomy2, workRoomy3, workRoomy4],
-    description: "Redesigned the end-to-end room booking experience with intuitive flows and a user-focused interface, and am currently designing the loyalty rewards experience to drive engagement and repeat bookings.",
+    description:
+      "Redesigned the end-to-end room booking experience with intuitive flows and a user-focused interface, and am currently designing the loyalty rewards experience to drive engagement and repeat bookings.",
   },
   {
     title: "Loyalty Rewards Experience",
     client: "ChowPOS RMS · Web & Mobile",
     images: [workRewards, workLoyalty, workQr],
-    description: "A customer-centric rewards journey that encourages repeat purchases and redemption, with the potential to drive 30–40% growth in repeat orders and restaurant sales through stronger retention.",
+    description:
+      "A customer-centric rewards journey that encourages repeat purchases and redemption, with the potential to drive 30–40% growth in repeat orders and restaurant sales through stronger retention.",
   },
 ];
 
@@ -118,7 +184,7 @@ const experience = [
     company: "AffordIT Ltd. (Remote)",
     period: "December 2022 - June 2023",
     body: "Designed social media posts, web experiences and mobile apps for multiple clients as part of the in-house design team.",
-  }
+  },
 ];
 
 const skills = [
@@ -143,7 +209,6 @@ const metrics = [
   { value: "80%", label: "Faster dining experience" },
 ];
 
-
 function ProjectImageCarousel({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -152,16 +217,12 @@ function ProjectImageCarousel({ images }: { images: string[] }) {
 
   const previousImage = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
-    setCurrentIndex((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   const nextImage = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
-    setCurrentIndex((prev) =>
-      prev === images.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   return (
@@ -189,18 +250,10 @@ function ProjectImageCarousel({ images }: { images: string[] }) {
 
         {images.length > 1 && (
           <>
-            <button
-              onClick={previousImage}
-              aria-label="Previous image"
-              style={arrowStyle("left")}
-            >
+            <button onClick={previousImage} aria-label="Previous image" style={arrowStyle("left")}>
               ‹
             </button>
-            <button
-              onClick={nextImage}
-              aria-label="Next image"
-              style={arrowStyle("right")}
-            >
+            <button onClick={nextImage} aria-label="Next image" style={arrowStyle("right")}>
               ›
             </button>
           </>
@@ -213,14 +266,10 @@ function ProjectImageCarousel({ images }: { images: string[] }) {
           onKeyDown={(e) => {
             if (e.key === "Escape") setIsFullscreen(false);
             if (e.key === "ArrowLeft") {
-              setCurrentIndex((prev) =>
-                prev === 0 ? images.length - 1 : prev - 1
-              );
+              setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
             }
             if (e.key === "ArrowRight") {
-              setCurrentIndex((prev) =>
-                prev === images.length - 1 ? 0 : prev + 1
-              );
+              setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
             }
           }}
           tabIndex={0}
@@ -276,11 +325,7 @@ function ProjectImageCarousel({ images }: { images: string[] }) {
               >
                 ‹
               </button>
-              <button
-                onClick={nextImage}
-                aria-label="Next image"
-                style={arrowStyle("right")}
-              >
+              <button onClick={nextImage} aria-label="Next image" style={arrowStyle("right")}>
                 ›
               </button>
             </>
@@ -323,7 +368,6 @@ function arrowStyle(side: "left" | "right"): React.CSSProperties {
   };
 }
 
-
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
     <div className="mb-12">
@@ -349,14 +393,18 @@ function Index() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a href={`tel:${PHONE}`} className="btn-base btn-primary hover:btn-primary-hover">
               <img src="/phone-icon.svg" alt="Phone" className="w-4 h-4" />
-  +92309-5307264
+              +92309-5307264
             </a>
             <a
               href={resumeAsset.url}
               download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
-              <img src="/download-icon.svg" alt="Download" className="w-4 h-4 invert-0 dark:invert" />
+              <img
+                src="/download-icon.svg"
+                alt="Download"
+                className="w-4 h-4 invert-0 dark:invert"
+              />
               Download Resume
             </a>
           </div>
@@ -376,10 +424,10 @@ function Index() {
         <SectionHeading eyebrow="Summary" title="Designing products that move numbers" />
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
           <p>
-            UX/Product Designer with 4 years of experience designing and optimizing digital
-            products across Restaurant Management, Property Management, Online Ordering, Payments,
-            Loyalty and mobile applications — turning complex business and user requirements into
-            intuitive, scalable, data-driven experiences on web and mobile.
+            UX/Product Designer with 4 years of experience designing and optimizing digital products
+            across Restaurant Management, Property Management, Online Ordering, Payments, Loyalty
+            and mobile applications — turning complex business and user requirements into intuitive,
+            scalable, data-driven experiences on web and mobile.
           </p>
           <p>
             I specialize in end-to-end product design: understanding user needs, defining workflows,
@@ -505,7 +553,11 @@ function Index() {
               download="resume-1.pdf"
               className="btn-base btn-outline hover:btn-primary-hover"
             >
-              <img src="/download-icon.svg" alt="Download" className="w-4 h-4 invert-0 dark:invert" />
+              <img
+                src="/download-icon.svg"
+                alt="Download"
+                className="w-4 h-4 invert-0 dark:invert"
+              />
               Download Resume
             </a>
           </div>
