@@ -36,7 +36,10 @@ import workOrdering15 from "@/assets/work-ordering15.jpg";
 import workOrdering16 from "@/assets/work-ordering16.jpg";
 import workOrdering17 from "@/assets/work-ordering17.jpg";
 
-import workCustomer from "@/assets/work-customer360.jpg";
+import workCustomer from "@/assets/work-customer.jpg";
+import workCustomer1 from "@/assets/work-customer1.jpg";
+import workCustomer2 from "@/assets/work-customer2.jpg";
+import workCustomer3 from "@/assets/work-customer3.jpg";
 
 import workRoomy from "@/assets/work-roomy.jpg";
 import workRoomy1 from "@/assets/work-roomy1.jpg";
@@ -134,7 +137,7 @@ const work = [
   {
     title: "Customer Profile & Details",
     client: "ChowPOS RMS · Web",
-    images: [workCustomer, workRoomy, workRewards],
+    images: [workCustomer, workCustomer1, workCustomer2, workCustomer3],
     description:
       "A centralized customer view combining profile data, visit frequency, spending insights, ordering behavior, notes, feedback and full order history. Structured and data-driven, optimized for quick scanning by restaurant staff.",
   },
